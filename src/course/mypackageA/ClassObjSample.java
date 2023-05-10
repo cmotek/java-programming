@@ -1,6 +1,6 @@
 package course.mypackageA;
 
-import course.mypackageB.Person;
+import course.mypackageB.*;
 
 public class ClassObjSample {
     public static void main(String[] args) {
