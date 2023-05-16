@@ -4,10 +4,7 @@ import course.mypackageB.*;
 
 public class ClassObjSample {
     public static void main(String[] args) {
-        Person alex = new Person();
-        alex.name="Alex";
-        alex.age = 55;
-        alex.gender = "Male";
+        Person alex = new Person("Alex", 55, "Male");
         alex.sleep();
 
         Person mia = new Person();
