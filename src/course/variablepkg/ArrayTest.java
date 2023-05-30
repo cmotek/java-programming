@@ -1,7 +1,7 @@
 package course.variablepkg;
 
 import course.mypackageB.Person;
-
+/*
 public class ArrayTest {
     public static void main(String[] args) {
         Person[] users = new Person[3];
@@ -26,4 +26,4 @@ public class ArrayTest {
 
         System.out.println(users[2].age);
         }
-    }
+    } */

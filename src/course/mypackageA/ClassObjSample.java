@@ -8,15 +8,17 @@ public class ClassObjSample {
         alex.sleep();
 
         Person mia = new Person();
-        mia.name = "Mia";
-        mia.age = 40;
-        mia.gender = "Female";
+        mia.setName("Mia");
+        mia.setAge(40);
+        mia.setGender("Female");
+        System.out.println(mia.getName());
         mia.sleep();
 
         Person james = new Person();
-        james.name = "James";
-        james.age = 3;
-        james.gender = "Male";
+        james.setName("James");
+        james.setAge(3);
+        james.setGender("Male");
+        System.out.println(james.getName());
         james.sleep();
 
     }

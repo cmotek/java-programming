@@ -1,18 +1,11 @@
 package course.inheritance;
 
-public class Human {
-    String name;
-    int age;
-    String gender;
+public abstract class Human {
 
-    public void walk(){
-        System.out.println(name + " walk like this");
-    }
+    public abstract void walk();
 
     public void speak(){
-        System.out.println(name + " speak like this");
+        System.out.println("Hey, I am from Human!.");
     }
-
-
 
 }
