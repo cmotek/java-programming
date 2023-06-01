@@ -1,48 +1,43 @@
 package course.mypackageB;
 
-
 import course.mypackageA.PersonSuper;
 
-public class Person extends PersonSuper {
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
+public class Person extends PersonSuper implements Comparable<Person>{
     private String name;
     private int age;
     private String gender;
 
-    public Person(String name, int age, String gender) {
-        this();
-        System.out.println("Person 3 arg Constructor");
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
         this.name = name;
+    }
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
         this.age = age;
+    }
+    public String getGender() {return gender;}
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
-    public Person(){
-        System.out.println("Person Default Constructor");
-        }
+    public Person(String name, int age, String gender) {}
+
+    @Override
+    public int hashCode() {
+        return this.name.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return obj instanceof Person && this.name.equals(((Person) obj).name);
+    }
+
+
+    public Person(){}
 
 
     public void sleep() {
@@ -55,5 +50,9 @@ public class Person extends PersonSuper {
         }
     }
 
+    @Override
+    public int compareTo(Person o) {
+        return 0;
     }
+}
 
